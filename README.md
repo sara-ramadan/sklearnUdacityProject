@@ -2,12 +2,16 @@ A complete README file should include:
 -------------------------------------
 summary of the project:
 ----------------------
-This project operationalize a Python flask app.
+This project operationalize a Python flask app
+1. ruuning the app on docker container and opening another terminal to run script which send data to get the predection
+2. running the app again after creating pod on kubernetes cluster and running docker container on on it
+3. testing cicd pipeline using circleci by linting python scripts
 
 Instructions on how to run the Python scripts and web app (simply listing command line calls will suffice)
 --------------------------------------------------------------------------------------------------------------
 
-CMD
+CMD ["python", "app.py"] -> to run the app after running the container 
+to run any python command on the terminal -> python app.
 
 A short explanation of the files in the repository.
 --------------------------------------------------
@@ -23,11 +27,6 @@ A short explanation of the files in the repository.
 9-./make_prediction.sh --> send some input data to my containerized application via port 8000.
 8- upload_docker.sh -> to upload the image on my docker hub account
 
-
-
-
-
-
-
-5- link for the project on circleci
+link for the project on circleci
+--------------------------------
 [![CircleCI](https://circleci.com/gh/sara-ramadan/sklearnUdacityProject.svg?style=svg)](https://circleci.com/gh/sara-ramadan/sklearnUdacityProject)
